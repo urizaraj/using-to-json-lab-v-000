@@ -34,13 +34,13 @@ class ProductsController < ApplicationController
     end
   end
 
-  def data
-    product = Product.find(params[:id])
-    # render json: ProductSerializer.serialize(product)
-    render json: product.to_json(
-      only: %i[id name description inventory price]
-    )
-  end
+  # def data
+  #   product = Product.find(params[:id])
+  #   # render json: ProductSerializer.serialize(product)
+  #   render json: product.to_json(
+  #     only: %i[id name description inventory price]
+  #   )
+  # end
 
   private
 
